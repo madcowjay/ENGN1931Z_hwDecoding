@@ -40,7 +40,7 @@ scores = [0 for _ in range(128)]
 print(len(scrambledText))
 for i in range(128):
   for j in range(len(scrambledText)):
-    shiftedTextArrays[i].append(chr((ord(scrambledText[j])+i)%128))
+    shiftedTextArrays[i].append(chr((ord(scrambledText[j])+i)%256))
   shiftedTextArrays[i] = ''.join(shiftedTextArrays[i])
   splitShiftedTextArrays[i] = shiftedTextArrays[i].split()
 
